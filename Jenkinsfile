@@ -34,6 +34,7 @@ pipeline {
             sh "kubectl delete -f deploy || true "
             sh "kubectl apply -f deploy"
             sh "kubectl get deploy"
+            sh "kubectl get nodes -o wide"
         }
      }   
     }
