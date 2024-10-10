@@ -18,7 +18,7 @@ pipeline {
 
        stage("Docker image scan"){
         steps {
-            echo "synk notifications_api:v1 --policies 'novulno' "
+            echo "synk igfred/mongo_db:$BUILD_NUMBER --policies 'novulno' "
         }
        }
 
