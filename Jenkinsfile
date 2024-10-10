@@ -35,6 +35,7 @@ pipeline {
             sh "kubectl apply -f deploy"
             sh "kubectl get deploy"
             sh "kubectl get nodes -o wide"
+            sh "kubectl get pods -o wide"
         }
      }   
     }
