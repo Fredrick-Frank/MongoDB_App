@@ -12,7 +12,7 @@ pipeline {
             sh "docker logout"
             sh "cat regpwd.txt | docker login --username igwefredrickchiemeka@gmail.com --password-stdin"
             sh "docker build -t igfred/mongo_db:$BUILD_NUMBER ."
-            sh "docker tag igfred/mongo_db:$BUILD_NUMBER igfred/mongo_db:latest "
+            sh "docker tag igfred/mongo_db:$BUILD_NUMBER igfred/mongo_db:latest"
         }
        }
 
